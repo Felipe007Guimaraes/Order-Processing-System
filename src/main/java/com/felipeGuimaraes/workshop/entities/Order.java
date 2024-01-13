@@ -10,7 +10,6 @@ import java.time.Instant;
 
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
 @Entity
 @Table(name = "tb_order")
 public class Order implements Serializable {
