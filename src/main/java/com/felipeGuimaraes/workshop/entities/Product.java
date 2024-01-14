@@ -1,10 +1,7 @@
 package com.felipeGuimaraes.workshop.entities;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.io.Serializable;
 import java.util.HashSet;
@@ -12,6 +9,7 @@ import java.util.Set;
 
 @Getter
 @NoArgsConstructor
+@EqualsAndHashCode
 @Entity
 @Table(name = "tb_product")
 public class Product implements Serializable {
