@@ -8,8 +8,9 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+@Getter
 @NoArgsConstructor
+@EqualsAndHashCode
 @Entity
 @Table(name = "tb_user")
 public class User implements Serializable {
@@ -32,6 +33,26 @@ public class User implements Serializable {
         this.name = name;
         this.email = email;
         this.phone = phone;
+        this.password = password;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public void setPassword(String password) {
         this.password = password;
     }
 }
